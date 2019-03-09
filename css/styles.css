@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800");
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Montserrat, Helvetica, Tahoma, Arial;
+	letter-spacing: -1px;
+	background-color: #f9f9f9;
+}
+
+.container {
+	display: flex;
+	justify-content: stretch;
+	align-items: stretch;
+	flex-wrap: wrap;
+	margin: 30px auto 64px auto;
+	box-shadow: -37px 67px 151px 20px #6d6d6d;
+	border-radius: 3px;
+	overflow: hidden;
+	max-width: 968;
+}
+
+.info {
+	display: flex;
+	flex: 1;
+	padding: 40px 40px;
+	background: #3a393e;
+	flex-direction: column;
+	align-items: center;
+}
+
+.info .about {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 60px;
+	color: #7c7b80;
+	letter-spacing: 0;
+}
+
+.info .about .about-title {
+	color: #1492b6;
+	margin: 0 0 0 10px;
+	line-height: 28px;
+}
+
+.details {
+	flex: 3;
+	padding: 10px;
+	background: #eae8eb;
+	padding: 80px 50px 25px 30px;
+}
+
+.name {
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	color: #3d3d3f;
+}
+
+.title {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-weight: 600;
+	font-size: 17px;
+	color: #1492b6;
+	text-transform: uppercase;
+}
+
+.frame {
+	position: relative;
+	width: 90px;
+	height: 125px;
+	justify-content: center;
+	display: inline-block;
+}
+
+.frame::before {
+	position: absolute;
+	display: block;
+	content: "";
+	height: 80px;
+	width: 80px;
+	border: 1.5px solid #1492b6;
+	transform: rotateZ(45deg);
+	/* margin-top: 20px; */
+}
+
+.frame::after {
+	position: absolute;
+	display: block;
+	content: "";
+	height: 80px;
+	width: 80px;
+	border: 1.8px solid #1492b6;
+	transform: rotateZ(45deg);
+	margin-left: 20px;
+	/* margin-top: 20px; */
+}
+
+.section {
+	padding: 10px;
+}
+
+.section-main {
+	display: flex;
+	height: 30px;
+	margin-bottom: 25px;
+}
+
+.section-header {
+	color: #1492b6;
+	font-weight: 700;
+	margin: 0 0 0 20px;
+}
+
+.frame--small {
+	width: 35px;
+	height: 32px;
+}
+
+.frame--small::before {
+	height: 20px;
+	width: 20px;
+	/* margin-top: 2px; */
+	border-width: 1px;
+}
+
+.frame--small::after {
+	height: 20px;
+	width: 20px;
+	margin-left: 6px;
+	/* margin-top: 2px; */
+	border-width: 1px;
+}
+
+.frame--small span {
+	position: absolute;
+	line-height: 23px;
+	color: #1492b6;
+	/* padding: 6px 0 0 0; */
+	font-weight: 800;
+	font-size: 14px;
+	/* margin-left: 5px; */
+	text-align: center;
+	width: 26px;
+}
+
+.division-header {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.division-main-date {
+	border-right: 2px solid #3d3d3f;
+	padding: 7px 40px 7px 10px;
+	margin-right: 20px;
+}
+
+.division-main-position {
+	display: flex;
+	flex-direction: column;
+}
+
+.division-main-position *:first-child {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.division-main-position *:not(first-child) {
+	font-size: 14px;
+}
+
+.division-content {
+	letter-spacing: 0;
+	font-size: 14px;
+}
+
+.work-skills {
+	width: 75%;
+}
+
+.work-skills ul {
+	column-count: 2;
+}
+
+.work-skills li {
+	list-style-type: none;
+	min-height: 25px;
+}
+
+.work-skills li:before {
+	content: "\2022";
+	color: #1492b6;
+	line-height: 0px;
+	font-weight: 800;
+	font-size: 28px;
+	margin-right: 20px;
+}
+
+.pencil {
+	position: absolute;
+	height: 500px;
+	width: 258px;
+	right: 0;
+	display: inline-block;
+	background: url(https://careers.gvc-plc.com/wp-content/uploads/revslider/career-cta/pencil1.png)
+		no-repeat center center;
+	margin-top: 230px;
+}
+
+@media only screen and (max-width: 670px) {
+	.division-main-date {
+		border: 0;
+	}
+}
+
+.photo {
+	width: 66px;
+	height: 66px;
+	top: 9px;
+	left: 19px;
+	position: absolute;
+	overflow: hidden;
+	transform: rotateZ(45deg);
+	background-color: #848484;
+}
+
+.photo:before {
+	content: "";
+	background: rgba(0, 0, 0, 0) url(../img/me.png) no-repeat center center;
+	background-size: 58px;
+	background-position-x: 11px;
+	background-position-y: -10px;
+	width: 80px;
+	height: 81px;
+	display: block;
+	transform: rotateZ(-45deg);
+}
