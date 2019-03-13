@@ -1,10 +1,21 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800");
+/* @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800"); */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
 body {
 	padding: 0;
 	margin: 0;
-	font-family: Montserrat, Helvetica, Tahoma, Arial;
-	letter-spacing: -1px;
+	font-family: "Open Sans", Helvetica, Tahoma, Arial;
 	background-color: #f9f9f9;
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+	color: unset;
+	font-weight: inherit;
+}
+
+li {
+	font-size: 0.9em;
 }
 
 .container {
@@ -19,41 +30,60 @@ body {
 	max-width: 968;
 }
 
-.info {
+.headerWithIcon {
 	display: flex;
+}
+
+.info {
+	/* display: flex;
+	flex-direction: column;
+	align-items: center; */
 	flex: 1;
 	padding: 40px 40px;
 	background: #3a393e;
-	flex-direction: column;
-	align-items: center;
+}
+
+.info-picture {
+	width: 104px;
+	margin: 0 auto;
 }
 
 .info .about {
-	display: flex;
-	flex-wrap: wrap;
+	/* display: flex;
+	flex-wrap: wrap; */
 	margin-top: 60px;
 	color: #7c7b80;
-	letter-spacing: 0;
 }
 
-.info .about .about-title {
+.info .contact {
+	color: #7c7b80;
+	margin-top: 50px;
+}
+
+.contact-item span:first-child {
+	display: block;
+	font-weight: 800;
+}
+
+.headerWithIcon-title {
 	color: #1492b6;
 	margin: 0 0 0 10px;
 	line-height: 28px;
+	display: inline-block;
 }
 
 .details {
 	flex: 3;
 	padding: 10px;
 	background: #eae8eb;
-	padding: 80px 50px 25px 30px;
+	padding: 40px 50px 25px 30px;
 }
 
 .name {
 	text-align: center;
 	text-transform: uppercase;
 	margin-bottom: 5px;
-	color: #3d3d3f;
+	color: #eae8eb;
 }
 
 .title {
@@ -61,7 +91,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-weight: 600;
-	font-size: 17px;
+	font-size: 1.07em;
 	color: #1492b6;
 	text-transform: uppercase;
 }
@@ -139,10 +169,15 @@ body {
 	color: #1492b6;
 	/* padding: 6px 0 0 0; */
 	font-weight: 800;
-	font-size: 14px;
+	font-size: 0.89em;
 	/* margin-left: 5px; */
 	text-align: center;
 	width: 26px;
+}
+
+.division-header li {
+	margin-bottom: 5px;
+	line-height: 1.1em;
 }
 
 .division-header {
@@ -153,8 +188,9 @@ body {
 
 .division-main-date {
 	border-right: 2px solid #3d3d3f;
-	padding: 7px 40px 7px 10px;
+	padding: 7px 20px 7px 10px;
 	margin-right: 20px;
+	min-width: 108px;
 }
 
 .division-main-position {
@@ -162,40 +198,48 @@ body {
 	flex-direction: column;
 }
 
-.division-main-position *:first-child {
-	font-size: 16px;
+.division-main-position span:first-child {
+	font-size: 1em;
 	font-weight: 700;
 }
 
-.division-main-position *:not(first-child) {
-	font-size: 14px;
+.division-main-position span:not(first-child) {
+	font-size: 0.89em;
 }
 
 .division-content {
 	letter-spacing: 0;
-	font-size: 14px;
+	font-size: 0.89em;
 }
 
 .work-skills {
-	width: 75%;
+	/* width: 75%; */
 }
 
 .work-skills ul {
-	column-count: 2;
+	/* column-count: 3; */
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
 }
 
 .work-skills li {
+	flex-shrink: 0;
 	list-style-type: none;
-	min-height: 25px;
+	display: flex;
+	align-items: center;
+	min-width: 190px;
 }
 
-.work-skills li:before {
+.work-skills li::before {
 	content: "\2022";
 	color: #1492b6;
-	line-height: 0px;
+	line-height: 0.5em;
 	font-weight: 800;
 	font-size: 28px;
-	margin-right: 20px;
+	margin: 0 10px;
+	display: inline-block;
+	/* width: 5px; */
 }
 
 .pencil {
@@ -207,12 +251,6 @@ body {
 	background: url(https://careers.gvc-plc.com/wp-content/uploads/revslider/career-cta/pencil1.png)
 		no-repeat center center;
 	margin-top: 230px;
-}
-
-@media only screen and (max-width: 670px) {
-	.division-main-date {
-		border: 0;
-	}
 }
 
 .photo {
@@ -236,4 +274,23 @@ body {
 	height: 81px;
 	display: block;
 	transform: rotateZ(-45deg);
+}
+
+@media print, only screen and (max-width: 670px) {
+	.container {
+		margin: 0;
+		box-shadow: none;
+	}
+}
+
+@media print {
+	.container {
+		height: 100vh;
+	}
+}
+
+@media only screen and (max-width: 670px) {
+	.division-main-date {
+		border: 0;
+	}
 }
