@@ -20,8 +20,31 @@ li {
 	max-width: 968px;
 }
 
-.headerWithIcon {
+.section {
+	padding: 10px;
+}
+
+.section-main {
 	display: flex;
+	height: 30px;
+	margin-bottom: 25px;
+}
+
+.section-header {
+	color: #1492b6;
+	font-weight: 700;
+	margin: 0 0 0 20px;
+}
+
+.info .section-main {
+	display: flex;
+}
+
+.info .section-header {
+	color: #1492b6;
+	margin: 0 0 0 10px;
+	line-height: 28px;
+	display: inline-block;
 }
 
 .info {
@@ -53,13 +76,6 @@ li {
 .contact-item span:first-child {
 	display: block;
 	font-weight: 800;
-}
-
-.headerWithIcon-title {
-	color: #1492b6;
-	margin: 0 0 0 10px;
-	line-height: 28px;
-	display: inline-block;
 }
 
 .details {
@@ -115,22 +131,6 @@ li {
 	transform: rotateZ(45deg);
 	margin-left: 20px;
 	/* margin-top: 20px; */
-}
-
-.section {
-	padding: 10px;
-}
-
-.section-main {
-	display: flex;
-	height: 30px;
-	margin-bottom: 25px;
-}
-
-.section-header {
-	color: #1492b6;
-	font-weight: 700;
-	margin: 0 0 0 20px;
 }
 
 .frame--small {
