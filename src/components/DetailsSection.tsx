@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Division from './Division';
-import IconTitle from './IconTitle';
+import Section from './Section';
 
 const skills = [
 	'C#',
@@ -100,28 +100,25 @@ class DetailsSection extends Component {
 	render() {
 		return (
 			<div className={'details'}>
-				<div className={'section'}>
-					<IconTitle text="Experiences" />
+				<Section title="Experiences">
 					{experiences.map(exp => (
 						<Division key={exp.startYear} {...exp}>
 							{this.renderJobDescription(exp.jobDescription)}
 						</Division>
 					))}
-				</div>
-				<div className={'work-skills'}>
-					<IconTitle text="Workskills" />
+				</Section>
+				<Section title="Workskills" extraClassName="work-skills">
 					<ul>
 						{skills.map(s => (
 							<li>{s}</li>
 						))}
 					</ul>
-				</div>
-				<div className={'section'}>
-					<IconTitle text="Certificates" />
+				</Section>
+				<Section title="Certificates">
 					{certificates.map(cert => (
 						<Division {...cert} />
 					))}
-				</div>
+				</Section>
 			</div>
 		);
 	}
