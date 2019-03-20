@@ -15,12 +15,13 @@ const about =
 	"I have passion for computers in general and for writing software in particular, be it Web, Mobile, or Desktop application. I don't stop learning and always seeking new challenges.";
 const hobbies =
 	'I love video games, photographing, reading books, watching SciFi movies, and DIY projects.';
+const imageUrl = '/img/me.png';
 
 class PersonalSection extends Component {
 	render() {
 		return (
 			<div className={'info'}>
-				<ProfilePicture />
+				<ProfilePicture imgUrl={imageUrl} />
 				<h1 className={'name'}>{fullName}</h1>
 				<h2 className={'title'}>{title}</h2>
 				<div className={'about'}>

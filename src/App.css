@@ -243,7 +243,7 @@ li {
 	margin-top: 230px;
 }
 
-.photo {
+.photo-wrapper {
 	width: 66px;
 	height: 66px;
 	top: 9px;
@@ -254,15 +254,12 @@ li {
 	background-color: #848484;
 }
 
-.photo:before {
+.photo {
 	content: "";
-	background: rgba(0, 0, 0, 0) url(/img/me.png) no-repeat center center;
-	background-size: 58px;
-	background-position-x: 11px;
-	background-position-y: -10px;
-	width: 80px;
-	height: 81px;
+	width: 60px;
 	display: block;
+	padding-left: 3px;
+    margin-top: -10px;
 	transform: rotateZ(-45deg);
 }
 
