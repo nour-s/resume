@@ -2,23 +2,22 @@ import React, { Component } from 'react';
 import IconTitle from './IconTitle';
 import ContactItem from './ContactItem';
 import ProfilePicture from './ProfilePicture';
+import { CvData } from '../models/CvData';
 
-const contactItems = [
-	{ label: 'Phone', value: '+999 999 999 9999' },
-	{ label: 'Website', value: 'http://nour-s.com', href: 'http://nour-s.com' },
-	{ label: 'Email', value: 'name@domain.com', href: 'mailto:name@domain.com' },
-];
+interface OwnProps {
+	personalData: CvData;
+}
 
-const fullName = 'Nour Sabouny';
-const title = 'Full Stack developer';
-const about =
-	"I have passion for computers in general and for writing software in particular, be it Web, Mobile, or Desktop application. I don't stop learning and always seeking new challenges.";
-const hobbies =
-	'I love video games, photographing, reading books, watching SciFi movies, and DIY projects.';
-const imageUrl = '/img/me.png';
-
-class PersonalSection extends Component {
+class PersonalSection extends Component<OwnProps> {
 	render() {
+		const {
+			imageUrl,
+			fullName,
+			title,
+			about,
+			hobbies,
+			contactItems,
+		} = this.props.personalData;
 		return (
 			<div className={'info'}>
 				<ProfilePicture imgUrl={imageUrl} />

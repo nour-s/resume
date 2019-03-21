@@ -1,88 +1,13 @@
 import React, { Component } from 'react';
 import Division from './Division';
 import Section from './Section';
+import { CvData } from '../models/CvData';
 
-const skills = [
-	'C#',
-	'ASP.NET MVC',
-	'ASP.NET CORE',
-	'Windows Forms (WPF)',
-	'Entity Framework',
-	'SQL Server/MY SQL',
-	'HTML5 / CSS3',
-	'JavaScript / TypeScript',
-	'React / React Native',
-	'Redux',
-	'RESTful APIs',
-	'Java',
-];
+interface OwnProps {
+	detailsData: CvData;
+}
 
-const experiences = [
-	{
-		startYear: '2017',
-		endYear: 'Present',
-		position: 'Full Stack developer',
-		company: 'TigerSpike',
-		jobDescription: [
-			'Support and contribute to software development and design processes.',
-			'Follow defined development best practices, including wiki contributions,code commenting and documentation, source control.',
-			'Execute and review test plans (where necessary).',
-			'Author and critique software designs and architectures.',
-			'Critique application wireframes, use cases, user journeys, and designs.',
-			'Identify project development tasks. Mentor junior colleagues',
-		],
-	},
-	{
-		startYear: '2016',
-		endYear: '2017',
-		position: 'Senior Software Developer',
-		company: 'Company Name',
-		jobDescription: [
-			'Translated application storyboards and use cases into functional applications.',
-			'Designed, built, and maintained efficient, reusable, and reliable Java code.',
-			'Ensured the best possible performance, and quality of the applications.',
-			'Identified bottlenecks and bugs, and devise solutions to these problems.',
-			'Helped maintain code quality, organization, and automatization.',
-		],
-	},
-	{
-		startYear: '2013',
-		endYear: '2016',
-		position: 'Senior Software Developer / Team Lead',
-		company: 'Company Name',
-		jobDescription: [
-			'Crafted, designed, communicated and defined the software architecture that solves the problem at hand.',
-			'Gave input as needed to issues like tools and environment selection.',
-			'Researched and recommended software tools to use.',
-		],
-	},
-	{
-		startYear: '2011',
-		endYear: '2013',
-		position: 'Senior Software Developer / Team Lead',
-		company: 'Company Name',
-		jobDescription: [
-			'Lead a team of developers, supervise the progress of tasks using TFS, and Scrum.',
-			'Designed the system architecture with the best standards',
-			'Designed database using SQL Server, managed many projects at the company.',
-		],
-	},
-];
-
-const certificates = [
-	{
-		startYear: '2019',
-		position: 'React Nanodegree Certification',
-		company: 'Udacity',
-	},
-	{
-		startYear: '2008',
-		position: 'Microsoft Certified Solutions Developer (MCSD)',
-		company: 'Microsoft',
-	},
-];
-
-class DetailsSection extends Component {
+class DetailsSection extends Component<OwnProps> {
 	renderJobDescription = (jobDescription: string[] | string) => {
 		if (Array.isArray(jobDescription)) {
 			return (
@@ -98,6 +23,8 @@ class DetailsSection extends Component {
 	};
 
 	render() {
+		const { experiences, skills, certificates } = this.props.detailsData;
+
 		return (
 			<div className={'details'}>
 				<Section title="Experiences">
