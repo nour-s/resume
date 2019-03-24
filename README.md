@@ -36,7 +36,8 @@ yarn build
 
 You will get the html version in the `build` folder.<br/>
 Just upload it somewhere or you can even create a repo on github and upload it there.<br/>
-You can access the page using the GitHub.io domain.<br/>
+Check this link https://nour-s.github.io/resume/<br/>
+For more information on how to do that, check this [article](https://medium.com/the-andela-way/how-to-deploy-your-react-application-to-github-pages-in-less-than-5-minutes-8c5f665a2d2a)
 
 Congratulations! you got a new cv.
 
