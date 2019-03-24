@@ -44,6 +44,6 @@ Congratulations! you got a new cv.
 I'm still working on the simplest way possible where you can just run few commands and you get it right away. Right now, I can just ask you to be patient :).
 
 ## Known issues:
-* The picture might need alignments, as I can't make one style that work on all pictures. Also you need to make sure the picture background matches the page background so you don't g et a weird-looking edges.
+* The picture might need alignments, as I can't make one style that work with all pictures. Also you need to make sure the picture background matches the page background so you don't get weird-looking edges.
 * The page will expand vertically if more lines are added. However, you need to be carefull when printing, as a page break might comes in the middle of a section.
-* Adding a lot of texts in one section (such as Experiences) could cause text to go off the borders, try to be consise as much as possible. If you think some styles can be fixed, please let me know by opening a new issue or creating a pull requests.
+* Adding a lot of texts in one section (such as Experiences) could cause the text to go off the borders, try to be consise as much as possible. If you think some styles can be fixed, please let me know by opening a new issue or creating a pull requests.
