@@ -1,12 +1,14 @@
 {
 	"name": "resume",
 	"version": "0.1.0",
+	"homepage": "https://github.com/resume",
 	"private": true,
 	"dependencies": {
 		"@types/jest": "^24.0.11",
 		"@types/node": "^11.11.3",
 		"@types/react": "^16.8.8",
 		"@types/react-dom": "^16.8.2",
+		"gh-pages": "^2.0.1",
 		"prettier": "^1.16.4",
 		"react": "^16.8.4",
 		"react-dom": "^16.8.4",
@@ -16,6 +18,8 @@
 	"scripts": {
 		"lint": "tslint -c tslint.json src/**/*.{ts,tsx} --fix --format verbose",
 		"start": "react-scripts start --port 3001",
+		"predeploy": "yarn run build",
+		"deploy": "gh-pages -d build",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
