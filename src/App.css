@@ -14,7 +14,7 @@ li {
 	align-items: stretch;
 	flex-wrap: wrap;
 	margin: 30px auto 64px auto;
-	box-shadow: -37px 67px 151px 20px #6d6d6d;
+	box-shadow: -37px 67px 96px -20px #6d6d6d;
 	border-radius: 3px;
 	overflow: hidden;
 	max-width: 968px;
@@ -252,11 +252,12 @@ li {
 
 .photo {
 	content: "";
-	width: 60px;
-	display: block;
-	padding-left: 3px;
-    margin-top: -10px;
-	transform: rotateZ(-45deg);
+    width: 71px;
+    display: block;
+    margin-left: 0px;
+    left: 0;
+    margin-top: 0px;
+    transform: rotateZ(-45deg);
 }
 
 @media print, only screen and (max-width: 670px) {
