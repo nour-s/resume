@@ -9,7 +9,7 @@ Nothing hurts me those days more than a CV that looks like an accident report. I
 ![cv_responsive](https://user-images.githubusercontent.com/1418564/54881889-2ffd2880-4e6e-11e9-8a1b-db72e60afcaf.gif)
 
 # PDF Or printed paper:
-The CV will print nicely on a paper or even to pdf file in case you wanted a commonn format to be used in emails:
+The CV will print nicely on a paper or even to pdf file in case you wanted a common format to be used in emails:
 
 ![image](https://user-images.githubusercontent.com/1418564/54882011-4657b400-4e6f-11e9-8991-f75c91941767.png)
 
