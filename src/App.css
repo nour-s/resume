@@ -260,20 +260,14 @@ li {
     transform: rotateZ(-45deg);
 }
 
-@media print, only screen and (max-width: 670px) {
+
+@media (max-width: 1024px) {
 	.container {
 		margin: 0;
+		max-width: unset;
 		box-shadow: none;
 	}
-}
 
-@media print {
-	.container {
-		height: 100vh;
-	}
-}
-
-@media only screen and (max-width: 670px) {
 	.division-main-date {
 		border: 0;
 	}
