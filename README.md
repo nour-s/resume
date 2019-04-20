@@ -45,7 +45,7 @@ Congratulations! you got a new cv.
 I'm still working on the simplest way possible where you can just run few commands and you get it right away. Right now, I can just ask you to be patient :).
 
 ## Coming features:
-* Use the standard json schema initiated by this project https://github.com/jsonresume/resume-schema
+* Use the standard json schema initiated by this project https://github.com/jsonresume/resume-schema - https://jsonresume.org/schema/
 * Add more sections to the resume.
 * Import from LinkedIn profiles.
 
