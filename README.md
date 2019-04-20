@@ -44,6 +44,11 @@ Congratulations! you got a new cv.
 ### Not a Developer?
 I'm still working on the simplest way possible where you can just run few commands and you get it right away. Right now, I can just ask you to be patient :).
 
+## Coming features:
+* Use the standard json schema initiated by this project https://github.com/jsonresume/resume-schema
+* Add more sections to the resume.
+* Import from LinkedIn profiles.
+
 ## Known issues:
 * The picture might need alignments, as I can't make one style that work with all pictures. Also you need to make sure the picture background matches the page background so you don't get weird-looking edges.
 * The page will expand vertically if more lines are added. However, you need to be carefull when printing, as a page break might comes in the middle of a section.
