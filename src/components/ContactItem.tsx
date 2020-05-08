@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 
 interface OwnProps {
 	label: string;
@@ -6,15 +6,11 @@ interface OwnProps {
 	href?: string;
 }
 
-const ContactItem: React.FunctionComponent<OwnProps> = props => {
+const ContactItem: FunctionComponent<OwnProps> = ({ href, label, value }) => {
 	return (
 		<div className={'contact-item'}>
-			<span>{props.label}</span>
-			{props.href ? (
-				<a href={props.href}>{props.value}</a>
-			) : (
-				<span>{props.value}</span>
-			)}
+			<span>{label}</span>
+			{href ? <a href={href}>{value}</a> : <span>{value}</span>}
 		</div>
 	);
 };

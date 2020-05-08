@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 
 interface OwnProps {
 	startYear: string;
@@ -7,7 +7,7 @@ interface OwnProps {
 	company: string;
 }
 
-const Division: React.FunctionComponent<OwnProps> = props => {
+const Division: FunctionComponent<OwnProps> = props => {
 	return (
 		<div className={'division'}>
 			<div className={'division-header'}>

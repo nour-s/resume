@@ -1,16 +1,16 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 
 interface OwnProps {
 	text: string;
 }
 
-const IconTitle: React.FunctionComponent<OwnProps> = props => {
+const IconTitle: FunctionComponent<OwnProps> = ({ text }) => {
 	return (
 		<div className={'section-main'}>
 			<div className={'frame frame--small'}>
-				<span>{props.text[0].toUpperCase()}</span>
+				<span>{text[0].toUpperCase()}</span>
 			</div>
-			<h3 className={'section-header'}>{props.text}</h3>
+			<h3 className={'section-header'}>{text}</h3>
 		</div>
 	);
 };

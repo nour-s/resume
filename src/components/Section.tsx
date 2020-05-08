@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import IconTitle from './IconTitle';
 
 interface OwnProps {
@@ -6,7 +6,7 @@ interface OwnProps {
 	extraClassName?: string;
 }
 
-const Section: React.FunctionComponent<OwnProps> = props => {
+const Section: FunctionComponent<OwnProps> = props => {
 	return (
 		<div className={`section ${props.extraClassName}`}>
 			<IconTitle text={props.title} />

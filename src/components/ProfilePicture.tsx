@@ -1,15 +1,15 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 
 interface OwnProps {
 	imgUrl: string;
 }
 
-const ProfilePicture: React.FunctionComponent<OwnProps> = props => {
+const ProfilePicture: FunctionComponent<OwnProps> = ({ imgUrl }) => {
 	return (
 		<div className={'info-picture'}>
 			<div className={'frame'}>
 				<div className={'photo-wrapper'}>
-					<img className="photo" src={props.imgUrl} />
+					<img className="photo" src={imgUrl} />
 				</div>
 			</div>
 		</div>
