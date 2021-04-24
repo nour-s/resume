@@ -206,6 +206,7 @@ li {
 	/* column-count: 3; */
 	display: flex;
 	flex-wrap: wrap;
+	flex-direction: column;
 	padding: 0;
 }
 
@@ -272,3 +273,18 @@ li {
 		border: 0;
 	}
 }
+
+@media screen and (min-width:1024px) {
+	.work-skills ul 
+	{
+		max-height: 120px;
+	}
+}
+
+@media print {
+	.work-skills ul 
+	{
+		max-height: 120px;
+		flex-direction: column;
+	}
+ }
